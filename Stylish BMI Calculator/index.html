@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish BMI Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="bmi-card">
+      <h2>BMI Calculator</h2>
+      <div class="input-group">
+        <input type="number" id="height" required />
+        <label for="height">Height (cm)</label>
+      </div>
+      <div class="input-group">
+        <input type="number" id="weight" required />
+        <label for="weight">Weight (kg)</label>
+      </div>
+      <button onclick="calculateBMI()">Compute BMI</button>
+      <div class="output">
+        <p id="bmiResult">--</p>
+        <p id="conditionText">Enter your height and weight</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
